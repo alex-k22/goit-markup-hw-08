@@ -1,0 +1,35 @@
+.page-header {
+	border-bottom: 1px solid #ececec;
+}
+.header-flex {
+	display: flex;
+	align-items: center;
+}
+.header__contacts {
+	display: flex;
+	margin-left: auto;
+}
+.header__contact {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	color: var(--main-text-color);
+	font-weight: 500;
+	line-height: calc(16 / 14);
+	letter-spacing: 0.02em;
+	transition: color var(--animation-type);
+
+	&:hover,
+	&:focus {
+		color: var(--accent-color);
+	}
+}
+.header__contacts .header__contact + .header__contact {
+	margin-left: 50px;
+}
+.header__icon {
+	fill: currentColor;
+}

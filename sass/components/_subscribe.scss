@@ -1,0 +1,40 @@
+.container-subscribe {
+	margin-top: 12px;
+	margin-left: 93px;
+}
+.subscribe-btn {
+	min-width: 200px;
+	height: 50px;
+	padding: 10px 62px 10px 28px;
+
+	&:hover,
+	&:focus {
+		background-color: var(--active-button);
+	}
+}
+.form-subscribe {
+	display: flex;
+	justify-content: left;
+	position: relative;
+}
+.subscribe-field {
+	display: block;
+	width: 358px;
+	height: 50px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 16px;
+	margin-right: 12px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+	color: var(--main-background);
+	background-color: transparent;
+}
+
+.send-icon {
+	position: absolute;
+	top: 50%;
+	right: 28px;
+	transform: translateY(-50%);
+}

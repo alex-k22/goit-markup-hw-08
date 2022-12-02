@@ -1,0 +1,70 @@
+.portfolio {
+	@extend %section;
+}
+.cards .card-header {
+	font-size: 18px;
+	line-height: calc(36 / 18);
+	letter-spacing: 0.06em;
+	color: var(--header-color);
+	margin-bottom: 4px;
+}
+.cards .link {
+	text-decoration: none;
+	font-size: 18px;
+}
+.cards .text {
+	padding: 20px 24px;
+	border-left: 1px solid #eeeeee;
+	border-right: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+}
+.cards .discription {
+	font-size: 16px;
+	line-height: calc(30 / 16);
+	letter-spacing: 0.03em;
+	text-decoration: none;
+	color: var(--main-text-color);
+}
+.cards .card {
+	width: 370px;
+	margin-bottom: 30px;
+	margin-right: 30px;
+	transition: box-shadow var(--animation-type);
+}
+.cards .card:nth-child(3n) {
+	margin-right: 0;
+}
+.cards .card:nth-last-child(-n + 3) {
+	margin-bottom: 0;
+}
+.card-thumb {
+	position: relative;
+	overflow: hidden;
+}
+.card-overlay {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	transform: translateY(100%);
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	left: 0;
+	padding-left: 24px;
+	padding-right: 24px;
+	background-color: rgba(33, 150, 243, 0.9);
+	transition: transform var(--animation-type);
+}
+.card .card-overlay-text {
+	line-height: calc(28 / 18);
+	color: var(--main-background);
+}
+
+.card:hover,
+.card:focus {
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.card:hover .card-overlay {
+	transform: translateY(0%);
+}

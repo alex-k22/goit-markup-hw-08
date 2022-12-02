@@ -1,0 +1,29 @@
+.works {
+	@extend %section;
+	padding-top: 0;
+}
+.works__item {
+	position: relative;
+	margin-right: 30px;
+}
+.works__item:last-child {
+	margin-right: 0;
+}
+.works__list {
+	display: flex;
+}
+.works__overlay {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	padding-top: 27px;
+	padding-bottom: 27px;
+	background-color: rgba(47, 48, 58, 0.8);
+}
+.works__text {
+	text-align: center;
+	font-weight: 700;
+	line-height: calc(16 / 14);
+	text-transform: uppercase;
+	color: var(--main-background);
+}

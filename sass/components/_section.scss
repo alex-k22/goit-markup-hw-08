@@ -1,0 +1,11 @@
+// .section {
+// 	padding-top: 94px;
+// 	padding-bottom: 94px;
+// }
+.section__header {
+	font-size: 36px;
+	line-height: calc(43 / 36);
+	text-align: center;
+	color: var(--header-color);
+	margin-bottom: 50px;
+}
