@@ -934,6 +934,11 @@ img {
           column-gap: 8px;
   margin-bottom: 40px;
 }
+@media screen and (max-width: 767px) {
+  .btn-group {
+    padding-right: 24px;
+  }
+}
 @media screen and (min-width: 768px) {
   .btn-group {
     -ms-flex-wrap: nowrap;
@@ -947,12 +952,6 @@ img {
 @media screen and (min-width: 1200px) {
   .btn-group {
     margin-bottom: 50px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .btn-group-item:nth-child(3) {
-    margin-right: calc(100% - 330px);
   }
 }
 
@@ -990,7 +989,6 @@ img {
 }
 
 .cards .card {
-  width: 450px;
   outline: 1px solid #eeeeee;
   -webkit-transition: -webkit-box-shadow var(--animation-type);
   transition: -webkit-box-shadow var(--animation-type);

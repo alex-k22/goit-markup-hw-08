@@ -24,6 +24,10 @@
 	margin-bottom: 40px;
 
 	//tablet screen
+	@media screen and (max-width: 767px) {
+		padding-right: 24px;
+	}
+	//tablet screen
 	@media screen and (min-width: 768px) {
 		flex-wrap: nowrap;
 		justify-content: center;
@@ -32,11 +36,6 @@
 	//desktop screen
 	@media screen and (min-width: 1200px) {
 		margin-bottom: 50px;
-	}
-}
-.btn-group-item:nth-child(3) {
-	@media screen and (max-width: 767px) {
-		margin-right: calc(100% - 330px);
 	}
 }
 .btn-group .btn:hover,
