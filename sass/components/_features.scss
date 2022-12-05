@@ -8,12 +8,15 @@
 		justify-content: center;
 		flex-wrap: wrap;
 		gap: 30px;
+		margin-bottom: 0;
 	}
 }
 .features__card {
+	margin-bottom: 30px;
 	//tablet screen
 	@media screen and (min-width: 768px) {
 		width: 354px;
+		margin-bottom: 0;
 	}
 
 	//desktop screen
@@ -34,6 +37,7 @@
 
 .features__card:last-child {
 	margin-right: 0;
+	margin-bottom: 0;
 }
 .features__subheader {
 	display: block;

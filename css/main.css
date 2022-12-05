@@ -401,12 +401,17 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 30px;
+    margin-bottom: 0;
   }
 }
 
+.features__card {
+  margin-bottom: 30px;
+}
 @media screen and (min-width: 768px) {
   .features__card {
     width: 354px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -434,6 +439,7 @@ img {
 
 .features__card:last-child {
   margin-right: 0;
+  margin-bottom: 0;
 }
 
 .features__subheader {
