@@ -952,7 +952,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .btn-group-item:nth-child(3) {
-    margin-right: 100px;
+    margin-right: calc(100% - 330px);
   }
 }
 

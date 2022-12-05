@@ -36,7 +36,7 @@
 }
 .btn-group-item:nth-child(3) {
 	@media screen and (max-width: 767px) {
-		margin-right: 100px;
+		margin-right: calc(100% - 330px);
 	}
 }
 .btn-group .btn:hover,
