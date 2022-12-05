@@ -15,6 +15,7 @@
 		<link rel="stylesheet" href="./css/main.min.css" />
 	</head>
 	<body>
+		<!-- Section Page-header -->
 		<header class="page-header">
 			<div class="container header-flex">
 				<nav class="main-nav">
@@ -45,6 +46,12 @@
 						+38 096 111 11 11
 					</a>
 				</div>
+
+				<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+					<svg width="40" height="40" class="burger-icon">
+						<use href="./images/icons.svg#burger"></use>
+					</svg>
+				</button>
 			</div>
 		</header>
 		<main>
@@ -52,17 +59,33 @@
 				<div class="container">
 					<h1 class="visually-hidden portfolio">Портфоліо</h1>
 					<ul class="list btn-group">
-						<li><button type="button" class="btn btn-first">Усі</button></li>
-						<li><button type="button" class="btn">Веб-сайти</button></li>
-						<li><button type="button" class="btn">Додатки</button></li>
-						<li><button type="button" class="btn">Дизайн</button></li>
-						<li><button type="button" class="btn">Маркетинг</button></li>
+						<li class="btn-group-item"><button type="button" class="btn btn-first">Усі</button></li>
+						<li class="btn-group-item"><button type="button" class="btn">Веб-сайти</button></li>
+						<li class="btn-group-item"><button type="button" class="btn">Додатки</button></li>
+						<li class="btn-group-item"><button type="button" class="btn">Дизайн</button></li>
+						<li class="btn-group-item"><button type="button" class="btn">Маркетинг</button></li>
 					</ul>
 					<ul class="list cards">
 						<li class="card">
 							<a href="" class="link">
 								<div class="card-thumb">
-									<img src="./images/portfolio-1.jpg" alt="Технокряк" height="294" width="370" />
+									<img
+										class="card-avatar"
+										srcset="
+											./images/portfolio/img_354.jpg 354w,
+											./images/portfolio/img_370.jpg 370w,
+											./images/portfolio/img_450.jpg 450w,
+											./images/portfolio/img_708.jpg 708w,
+											./images/portfolio/img_740.jpg 740w,
+											./images/portfolio/img_900.jpg 900w
+										"
+										sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+										src="./images/portfolio/img_450.jpg"
+										alt="Технокряк"
+										loading="lazy"
+										width="450"
+										height="294"
+									/>
 									<div class="card-overlay">
 										<p class="card-overlay-text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -79,7 +102,23 @@
 						<li class="card">
 							<a href="" class="link">
 								<div class="card-thumb">
-									<img src="./images/portfolio-2.jpg" alt="Постер" height="294" width="370" />
+									<img
+										class="card-avatar"
+										srcset="
+											./images/portfolio/img-1_354.jpg 354w,
+											./images/portfolio/img-1_370.jpg 370w,
+											./images/portfolio/img-1_450.jpg 450w,
+											./images/portfolio/img-1_708.jpg 708w,
+											./images/portfolio/img-1_740.jpg 740w,
+											./images/portfolio/img-1_900.jpg 900w
+										"
+										sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+										src="./images/portfolio/img-1_450.jpg"
+										alt="Постер"
+										loading="lazy"
+										width="450"
+										height="294"
+									/>
 									<div class="card-overlay">
 										<p class="card-overlay-text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -96,7 +135,23 @@
 						<li class="card">
 							<a href="" class="link">
 								<div class="card-thumb">
-									<img src="./images/portfolio-3.jpg" alt="Ресторан" height="294" width="370" />
+									<img
+										class="card-avatar"
+										srcset="
+											./images/portfolio/img-2_354.jpg 354w,
+											./images/portfolio/img-2_370.jpg 370w,
+											./images/portfolio/img-2_450.jpg 450w,
+											./images/portfolio/img-2_708.jpg 708w,
+											./images/portfolio/img-2_740.jpg 740w,
+											./images/portfolio/img-2_900.jpg 900w
+										"
+										sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+										src="./images/portfolio/img-2_450.jpg"
+										alt="Ресторан"
+										loading="lazy"
+										width="450"
+										height="294"
+									/>
 									<div class="card-overlay">
 										<p class="card-overlay-text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -113,7 +168,23 @@
 						<li class="card">
 							<a href="" class="link">
 								<div class="card-thumb">
-									<img src="./images/portfolio-4.jpg" alt="Навушники" height="294" width="370" />
+									<img
+										class="card-avatar"
+										srcset="
+											./images/portfolio/img-3_354.jpg 354w,
+											./images/portfolio/img-3_370.jpg 370w,
+											./images/portfolio/img-3_450.jpg 450w,
+											./images/portfolio/img-3_708.jpg 708w,
+											./images/portfolio/img-3_740.jpg 740w,
+											./images/portfolio/img-3_900.jpg 900w
+										"
+										sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+										src="./images/portfolio/img-3_450.jpg"
+										alt="Навушники"
+										loading="lazy"
+										width="450"
+										height="294"
+									/>
 									<div class="card-overlay">
 										<p class="card-overlay-text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -130,7 +201,23 @@
 						<li class="card">
 							<a href="" class="link">
 								<div class="card-thumb">
-									<img src="./images/portfolio-5.jpg" alt="Коробки" height="294" width="370" />
+									<img
+										class="card-avatar"
+										srcset="
+											./images/portfolio/img-4_354.jpg 354w,
+											./images/portfolio/img-4_370.jpg 370w,
+											./images/portfolio/img-4_450.jpg 450w,
+											./images/portfolio/img-4_708.jpg 708w,
+											./images/portfolio/img-4_740.jpg 740w,
+											./images/portfolio/img-4_900.jpg 900w
+										"
+										sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+										src="./images/portfolio/img-4_450.jpg"
+										alt="Коробки"
+										loading="lazy"
+										width="450"
+										height="294"
+									/>
 									<div class="card-overlay">
 										<p class="card-overlay-text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -147,7 +234,23 @@
 						<li class="card">
 							<a href="" class="link">
 								<div class="card-thumb">
-									<img src="./images/portfolio-6.jpg" alt="Веб-сайт" height="294" width="370" />
+									<img
+										class="card-avatar"
+										srcset="
+											./images/portfolio/img-5_354.jpg 354w,
+											./images/portfolio/img-5_370.jpg 370w,
+											./images/portfolio/img-5_450.jpg 450w,
+											./images/portfolio/img-5_708.jpg 708w,
+											./images/portfolio/img-5_740.jpg 740w,
+											./images/portfolio/img-5_900.jpg 900w
+										"
+										sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+										src="./images/portfolio/img-5_450.jpg"
+										alt="Веб-сайт"
+										loading="lazy"
+										width="450"
+										height="294"
+									/>
 									<div class="card-overlay">
 										<p class="card-overlay-text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -164,7 +267,23 @@
 						<li class="card">
 							<a href="" class="link">
 								<div class="card-thumb">
-									<img src="./images/portfolio-7.jpg" alt="Книга" height="294" width="370" />
+									<img
+										class="card-avatar"
+										srcset="
+											./images/portfolio/img-6_354.jpg 354w,
+											./images/portfolio/img-6_370.jpg 370w,
+											./images/portfolio/img-6_450.jpg 450w,
+											./images/portfolio/img-6_708.jpg 708w,
+											./images/portfolio/img-6_740.jpg 740w,
+											./images/portfolio/img-6_900.jpg 900w
+										"
+										sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+										src="./images/portfolio/img-6_450.jpg"
+										alt="Книга"
+										loading="lazy"
+										width="450"
+										height="294"
+									/>
 									<div class="card-overlay">
 										<p class="card-overlay-text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -181,7 +300,23 @@
 						<li class="card">
 							<a href="" class="link">
 								<div class="card-thumb">
-									<img src="./images/portfolio-8.jpg" alt="Ярлик" height="294" width="370" />
+									<img
+										class="card-avatar"
+										srcset="
+											./images/portfolio/img-7_354.jpg 354w,
+											./images/portfolio/img-7_370.jpg 370w,
+											./images/portfolio/img-7_450.jpg 450w,
+											./images/portfolio/img-7_708.jpg 708w,
+											./images/portfolio/img-7_740.jpg 740w,
+											./images/portfolio/img-7_900.jpg 900w
+										"
+										sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+										src="./images/portfolio/img-7_450.jpg"
+										alt="Ярлик"
+										loading="lazy"
+										width="450"
+										height="294"
+									/>
 									<div class="card-overlay">
 										<p class="card-overlay-text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -198,7 +333,23 @@
 						<li class="card">
 							<a href="" class="link">
 								<div class="card-thumb">
-									<img src="./images/portfolio-9.jpg" alt="Ноутбук" height="294" width="370" />
+									<img
+										class="card-avatar"
+										srcset="
+											./images/portfolio/img-8_354.jpg 354w,
+											./images/portfolio/img-8_370.jpg 370w,
+											./images/portfolio/img-8_450.jpg 450w,
+											./images/portfolio/img-8_708.jpg 708w,
+											./images/portfolio/img-8_740.jpg 740w,
+											./images/portfolio/img-8_900.jpg 900w
+										"
+										sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+										src="./images/portfolio/img-8_450.jpg"
+										alt="Ноутбук"
+										loading="lazy"
+										width="450"
+										height="294"
+									/>
 									<div class="card-overlay">
 										<p class="card-overlay-text">
 											Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
@@ -216,6 +367,7 @@
 				</div>
 			</section>
 		</main>
+		<!-- Footer -->
 		<footer class="site-footer">
 			<div class="container site-footer__container">
 				<div class="container-adress">
@@ -234,7 +386,7 @@
 						<a href="tel:380961111111" class="site-footer__contact link">+38 096 111 11 11</a>
 					</address>
 				</div>
-				<div class="socials">
+				<div class="container-socials">
 					<h2 class="socials__title">Приєднуйтесь</h2>
 					<ul class="list socials__list">
 						<li>
@@ -296,13 +448,48 @@
 					<form name="form_subscribe" class="form-subscribe">
 						<label class="subscribe-label" for="email"></label>
 						<input type="email" class="subscribe-field" name="email" id="email" placeholder="E-mail" required />
-						<button type="submit" class="button subscribe-btn">Підписатися</button>
-						<svg class="send-icon" width="24" height="24">
-							<use href="./images/icons.svg#send"></use>
-						</svg>
+						<div class="button-send">
+							<button type="submit" class="button subscribe-btn">Підписатися</button>
+							<svg class="send-icon" width="24" height="24">
+								<use href="./images/icons.svg#send"></use>
+							</svg>
+						</div>
 					</form>
 				</div>
 			</div>
 		</footer>
+
+		<!-- Mobile menu -->
+		<div class="menu-container js-menu-container" id="mobile-menu">
+			<button class="menu-toggle js-close-menu">
+				<svg class="menu-close-icon" width="18" height="18">
+					<use href="./images/icons.svg#icon-close"></use>
+				</svg>
+			</button>
+
+			<ul class="mobile-menu">
+				<li class="mobile-menu-item"><a href="./index.html" class="mobile-menu-link link">Студія</a></li>
+				<li class="mobile-menu-item"><a href="./portfolio.html" class="mobile-menu-link current link">Портфоліо</a></li>
+				<li class="mobile-menu-item"><a href="" class="mobile-menu-link link">Контакти</a></li>
+			</ul>
+			<ul class="mobile-contacts list">
+				<li class="mobile-contacts-item"><a href="" class="mobile-contacts-tel link">+38 096 111 11 11</a></li>
+				<li class="mobile-contacts-item"><a href="" class="mobile-contacts-mail link">info@devstudio.com</a></li>
+			</ul>
+			<ul class="mobile-socials list">
+				<li class="mobile-socials-item"><a href="" class="mobile-socials-link link">Instagram</a></li>
+				<li class="mobile-socials-item"><a href="" class="mobile-socials-link link">Twitter</a></li>
+				<li class="mobile-socials-item"><a href="" class="mobile-socials-link link">Facebook</a></li>
+				<li class="mobile-socials-item"><a href="" class="mobile-socials-link link">LinkedIn</a></li>
+			</ul>
+		</div>
+
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+		></script>
+		<script defer src="./js/mobile-menu.js"></script>
 	</body>
 </html>

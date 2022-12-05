@@ -1,5 +1,18 @@
-.socials {
-	margin-top: 12px;
+.container-socials {
+	//tablet screen
+	@media screen and (max-width: 767px) {
+		width: 100%;
+	}
+
+	//up to desktop screen
+	@media screen and (max-width: 1199px) {
+		margin-bottom: 60px;
+	}
+
+	//desktop screen
+	@media screen and (min-width: 1200px) {
+		margin-top: 12px;
+	}
 }
 .socials__list {
 	display: flex;
@@ -33,4 +46,9 @@
 	text-transform: uppercase;
 	color: var(--main-background);
 	margin-bottom: 20px;
+
+	//up to desktop screen
+	@media screen and (max-width: 1199px) {
+		text-align: center;
+	}
 }

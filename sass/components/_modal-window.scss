@@ -23,12 +23,26 @@
 	top: 50%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
-	width: 528px;
-	height: 581px;
+	width: 450px;
+	height: 609px;
 	background-color: var(--main-background);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 	transition: transform var(--animation-type), opacity var(--animation-type);
+
+	//tablet screen
+	@media screen and (min-width: 768px) {
+	}
+
+	//up to desktop screen
+	@media screen and (max-width: 1199px) {
+	}
+
+	//desktop screen
+	@media screen and (min-width: 1200px) {
+		width: 528px;
+		height: 581px;
+	}
 }
 .modal-form {
 	margin-left: 40px;
@@ -62,10 +76,17 @@
 	margin-bottom: 12px;
 	font-weight: 700;
 	font-size: 20px;
-	line-height: calc(23 / 20);
+	line-height: calc(30 / 20);
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--header-color);
+	padding-left: 20px;
+	padding-right: 20px;
+
+	//desktop screen
+	@media screen and (min-width: 1200px) {
+		line-height: calc(23 / 20);
+	}
 }
 .modal-form-group {
 	margin-bottom: 20px;
@@ -141,10 +162,18 @@
 	justify-content: center;
 	align-items: center;
 	gap: 4px;
+	font-size: 12px;
+	line-height: calc(14 / 12);
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: var(--main-text-color);
 	user-select: none;
+
+	//desktop screen
+	@media screen and (min-width: 1200px) {
+		font-size: 14px;
+		line-height: calc(24 / 14);
+	}
 }
 .agree-link {
 	color: var(--accent-color);

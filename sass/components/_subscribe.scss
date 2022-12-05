@@ -1,6 +1,21 @@
 .container-subscribe {
-	margin-top: 12px;
-	margin-left: 93px;
+	// margin-top: 12px;
+	// margin-left: 93px;
+
+	//up to tablet screen
+	@media screen and (max-width: 1199px) {
+		width: 100%;
+	}
+
+	//up to desktop screen
+	@media screen and (max-width: 1199px) {
+	}
+
+	//desktop screen
+	@media screen and (min-width: 1200px) {
+		margin-top: 12px;
+		margin-left: 93px;
+	}
 }
 .subscribe-btn {
 	min-width: 200px;
@@ -14,22 +29,39 @@
 }
 .form-subscribe {
 	display: flex;
-	justify-content: left;
 	position: relative;
+
+	//up to desktop screen
+	@media screen and (max-width: 1199px) {
+		align-items: center;
+		flex-direction: column;
+	}
+
+	//desktop screen
+	@media screen and (min-width: 1200px) {
+		justify-content: left;
+	}
 }
 .subscribe-field {
 	display: block;
-	width: 358px;
+	width: 450px;
 	height: 50px;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	padding-left: 16px;
-	margin-right: 12px;
+	margin-bottom: 20px;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
 	color: var(--main-background);
 	background-color: transparent;
+
+	//desktop screen
+	@media screen and (min-width: 1200px) {
+		width: 358px;
+		margin-right: 12px;
+		margin-bottom: 0;
+	}
 }
 
 .send-icon {
@@ -37,4 +69,7 @@
 	top: 50%;
 	right: 28px;
 	transform: translateY(-50%);
+}
+.button-send {
+	position: relative;
 }

@@ -4,14 +4,21 @@
 .clients-list {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	gap: 30px;
+
+	//desktop screen
+	@media screen and (min-width: 1200px) {
+		flex-wrap: nowrap;
+	}
 }
 .client-link {
 	display: flex;
-	width: 170px;
+	width: 210px;
 	height: 92px;
 	align-items: center;
 	justify-content: center;
+
 	border: 1px solid #afb1b8;
 	color: #afb1b8;
 	border-radius: 4px;
@@ -21,6 +28,16 @@
 	&:focus {
 		color: var(--accent-color);
 		border-color: var(--accent-color);
+	}
+
+	//tablet screen
+	@media screen and (min-width: 768px) {
+		width: 226px;
+	}
+
+	//desktop screen
+	@media screen and (min-width: 1200px) {
+		width: 170px;
 	}
 }
 .client-logo {

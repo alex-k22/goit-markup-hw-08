@@ -1,6 +1,11 @@
 .works {
 	@extend %section;
 	padding-top: 0;
+
+	//to desktop screen
+	@media screen and (max-width: 1199px) {
+		display: none;
+	}
 }
 .works__item {
 	position: relative;

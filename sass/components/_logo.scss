@@ -2,11 +2,18 @@
 	font-family: "Raleway", sans-serif;
 	font-style: normal;
 	font-weight: 700;
-	font-size: 26px;
+	font-size: 24px;
 	text-decoration: none;
-	line-height: calc(31 / 26);
+	line-height: calc(28 / 24);
 	letter-spacing: 0.03em;
 	color: #000000;
+
+	//desktop screen
+	@media screen and (min-width: 1200px) {
+		font-size: 26px;
+		text-decoration: none;
+		line-height: calc(31 / 26);
+	}
 }
 .logo-web {
 	color: var(--accent-color);

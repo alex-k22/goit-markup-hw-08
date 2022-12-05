@@ -3,9 +3,17 @@
 	align-items: center;
 }
 .main-nav__list {
-	display: flex;
-	margin-left: 93px;
-	margin-right: auto;
+	display: none;
+
+	//desktop screen
+	@media screen and (min-width: 768px) {
+		display: flex;
+		margin-left: 88px;
+		margin-right: auto;
+	}
+	@media screen and (min-width: 1200px) {
+		margin-left: 93px;
+	}
 }
 .main-nav__item:not(:last-child) {
 	margin-right: 50px;

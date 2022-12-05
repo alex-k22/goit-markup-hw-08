@@ -14,9 +14,6 @@
 }
 .cards .text {
 	padding: 20px 24px;
-	border-left: 1px solid #eeeeee;
-	border-right: 1px solid #eeeeee;
-	border-bottom: 1px solid #eeeeee;
 }
 .cards .discription {
 	font-size: 16px;
@@ -26,10 +23,19 @@
 	color: var(--main-text-color);
 }
 .cards .card {
-	width: 370px;
-	margin-bottom: 30px;
-	margin-right: 30px;
+	width: 450px;
+	outline: 1px solid #eeeeee;
 	transition: box-shadow var(--animation-type);
+
+	//tablet screen
+	@media screen and (min-width: 768px) {
+		width: 354px;
+	}
+
+	//desktop screen
+	@media screen and (min-width: 1200px) {
+		width: 370px;
+	}
 }
 .cards .card:nth-child(3n) {
 	margin-right: 0;

@@ -1,4 +1,13 @@
 %section {
-	padding-top: 94px;
-	padding-bottom: 94px;
+	//up to desktop screen
+	@media screen and (max-width: 1199px) {
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+
+	//desktop screen
+	@media screen and (min-width: 1200px) {
+		padding-top: 94px;
+		padding-bottom: 94px;
+	}
 }
