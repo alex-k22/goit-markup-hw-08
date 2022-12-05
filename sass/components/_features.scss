@@ -5,22 +5,20 @@
 	//tablet screen and wider
 	@media screen and (min-width: 768px) {
 		display: flex;
-		align-items: center;
+		justify-content: center;
 		flex-wrap: wrap;
 		gap: 30px;
 	}
 }
 .features__card {
-	//width: 450px;
-
 	//tablet screen
 	@media screen and (min-width: 768px) {
-		//width: 354px;
+		width: 354px;
 	}
 
 	//desktop screen
 	@media screen and (min-width: 1200px) {
-		//width: 270px;
+		width: 270px;
 	}
 }
 .features__logo {
