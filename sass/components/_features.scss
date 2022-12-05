@@ -11,16 +11,16 @@
 	}
 }
 .features__card {
-	width: 450px;
+	//width: 450px;
 
 	//tablet screen
 	@media screen and (min-width: 768px) {
-		width: 354px;
+		//width: 354px;
 	}
 
 	//desktop screen
 	@media screen and (min-width: 1200px) {
-		width: 270px;
+		//width: 270px;
 	}
 }
 .features__logo {

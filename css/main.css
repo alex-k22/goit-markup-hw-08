@@ -404,20 +404,6 @@ img {
   }
 }
 
-.features__card {
-  width: 450px;
-}
-@media screen and (min-width: 768px) {
-  .features__card {
-    width: 354px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .features__card {
-    width: 270px;
-  }
-}
-
 .features__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -519,7 +505,6 @@ img {
 }
 
 .team__card {
-  width: 450px;
   margin-right: 0px;
   background-color: var(--main-background);
   border-radius: 0px 0px 4px 4px;
