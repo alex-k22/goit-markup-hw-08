@@ -44,7 +44,7 @@
 }
 .subscribe-field {
 	display: block;
-	width: 450px;
+	width: 100%;
 	height: 50px;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -55,6 +55,11 @@
 	border-radius: 4px;
 	color: var(--main-background);
 	background-color: transparent;
+
+	//tablet screen
+	@media screen and (min-width: 768px) {
+		width: 450px;
+	}
 
 	//desktop screen
 	@media screen and (min-width: 1200px) {
