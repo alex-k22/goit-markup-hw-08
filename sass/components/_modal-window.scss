@@ -23,7 +23,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
-	width: 450px;
+	width: 98%;
 	height: 609px;
 	background-color: var(--main-background);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -31,7 +31,8 @@
 	transition: transform var(--animation-type), opacity var(--animation-type);
 
 	//tablet screen
-	@media screen and (min-width: 768px) {
+	@media screen and (min-width: 480px) {
+		width: 450px;
 	}
 
 	//up to desktop screen
@@ -162,6 +163,7 @@
 	justify-content: center;
 	align-items: center;
 	gap: 4px;
+	flex-wrap: wrap;
 	font-size: 12px;
 	line-height: calc(14 / 12);
 	line-height: 1.71;
